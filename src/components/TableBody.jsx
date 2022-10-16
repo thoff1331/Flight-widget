@@ -1,5 +1,6 @@
 import '../index.css';
 import { useState, useEffect } from 'react';
+import TableRow from './TableRow';
 
 function TableBody() {
     const [flights,setFlights] = useState(null)
@@ -10,6 +11,10 @@ function TableBody() {
     useEffect(() => getFlights(), [])
   return (
 <tbody>
+  {flights?.map((flight,index) => (
+        <TableRow key={index} flight={flight}></TableRow>
+
+    ))}
 </tbody>
   );
 }

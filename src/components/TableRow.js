@@ -1,6 +1,7 @@
-import './App.css';
+import '../index.css';
 
-function TableRow() {
+const  TableRow = ({flight}) =>  {
+    console.log(flight)
   return (
   <></>
   );
