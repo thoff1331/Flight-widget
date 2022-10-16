@@ -1,18 +1,16 @@
-import '../index.css';
-
-function TableHead() {
+const TableHead = () => {
   return (
-  <thead>
+      <thead>
       <tr>
-        <th></th>
-        <th id='time'>Time</th>
-        <th id='destination'>Destination</th>  
-        <th id='flight'>Flight</th>
-        <th id='gate'>Gate</th>
-        <th id='status'>Status</th>
+          <th></th>
+          <th id="time">TIME</th>
+          <th id="destination">DESTINATION</th>
+          <th id="flight">FLIGHT</th>
+          <th id="gate">GATE</th>
+          <th id="status">STATUS</th>
       </tr>
-  </thead>
-  );
+      </thead>
+  )
 }
 
-export default TableHead;
+export default TableHead

@@ -1,17 +1,13 @@
-import '../index.css';
-import TableBody from './TableBody';
-import TableHead from './TableHead';
+import TableHead from './TableHead'
+import TableBody from './TableBody'
 
-function Table() {
-  return (
- <table>
-     <TableHead>
-         <TableBody>
-
-         </TableBody>
-     </TableHead>
- </table>
-  );
+const Table = () => {
+    return (
+        <table>
+            <TableHead/>
+            <TableBody/>
+        </table>
+    )
 }
 
-export default Table;
+export default Table

@@ -1,9 +1,15 @@
-import './index.css';
+import TableLetter from './TableLetter'
 
-function TableCell() {
-  return (
-  <></>
-  );
+const TableCell = ({ word }) => {
+
+    return (
+        <td>
+            {Array.from(word).map((letter, index) => (
+                <TableLetter key={index} letter={letter} index={index}/>
+            ))}
+        </td>
+    )
 }
 
-export default TableCell;
+export default TableCell
+

@@ -11,7 +11,7 @@ function TableBody() {
     useEffect(() => getFlights(), [])
   return (
 <tbody>
-  {flights?.map((flight,index) => (
+  {flights?.filter(el => el.gate).map((flight,index) => (
         <TableRow key={index} flight={flight}></TableRow>
 
     ))}

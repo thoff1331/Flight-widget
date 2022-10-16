@@ -1,15 +1,12 @@
-import './index.css';
-import Table from './components/Table';
-import TableBody from './components/TableBody';
 
-function App() {
+import Table from './components/Table'
+const App = () => {
   return (
-    <div className="departures">
-      <header>DEPARTURES</header>
-      <Table />
-      <TableBody></TableBody>
-    </div>
-  );
+      <div className="departures">
+        <header>DEPARTURES</header>
+        <Table/>
+      </div>
+  )
 }
 
-export default App;
+export default App
